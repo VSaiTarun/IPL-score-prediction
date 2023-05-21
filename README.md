@@ -34,6 +34,13 @@ https://www.section.io/engineering-education/deploying-machine-learning-models-u
 ### Sample Input and Output
 
 > Input
+<img width="600" alt="image" src="https://github.com/VSaiTarun/IPL-score-prediction/assets/132877695/8ffb6e9d-4bbc-4b92-879a-f3172b72db79">
+
+>output
+
+<img width="600" alt="image" src="https://github.com/VSaiTarun/IPL-score-prediction/assets/132877695/02624631-1964-4c41-9934-efb43ba9a9d1">
+
+
 
 
 
