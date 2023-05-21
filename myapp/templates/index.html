@@ -3,25 +3,64 @@
 <head>
   <title>First Innings Score Prediction</title>
   <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
-  <form action="/predict" method="POST">
-    <div class="container">
-      <input type="text" name="batting_team" placeholder="batting team">
-      <input type="text" name="bowling_team" placeholder="bowling team team"><br><br>
-      <input type="text" name="overs" placeholder="overs till now" >
-      <input type="number" name="runs" placeholder="runs till now">
-      <input type="number" name="wickets" placeholder="wickets till now"><br><br>
-      <input type="number" name="runs_in_prev5_overs" placeholder="runs in prev 5 overs">
-      <input type="number" name="wickets_in_prev5_overs" placeholder="wickets in prev 5 overs"><br><br>
-      <input type="submit" value="submit"><br><br>
+  <div class="container">
+    <h1>First Innings Score Prediction</h1>
+    <form action="/predict" method="POST">
+      <input type="text" name="batting_team" placeholder="Batting Team">
+      <input type="text" name="bowling_team" placeholder="Bowling Team"><br><br>
+      <input type="text" name="overs" placeholder="Overs Till Now">
+      <input type="number" name="runs" placeholder="Runs Till Now">
+      <input type="number" name="wickets" placeholder="Wickets Till Now"><br><br>
+      <input type="number" name="runs_in_prev5_overs" placeholder="Runs in Last 5 Overs">
+      <input type="number" name="wickets_in_prev5_overs" placeholder="Wickets in Last 5 Overs"><br><br>
+      <input type="submit" value="Submit"><br><br>
+    </form>
+    <div class="output">
       {{output}}
     </div>
-  </form>
- <style>
-  .container{
+  </div>
+</body>
+<style>
+  body{
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 5px;
     text-align: center;
   }
- </style>
-</body>
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .output {
+    text-align: center;
+    font-weight: bold;
+  }
+</style>
 </html>
